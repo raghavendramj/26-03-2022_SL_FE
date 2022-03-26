@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Units of CSS - EM and REM</title>
+    <style>
+      body {
+        border: thin solid red;
+        padding: 20px;
+        font-size: 14px;
+        height: 60vh;
+      }
+
+      div {
+        border: thin solid blue;
+        margin: 10px;
+        padding: 10px;
+        color: blue;
+        font-size: 10px;
+      }
+
+      section {
+        border: thin solid black;
+        margin: 10px;
+        color: red;
+        padding: 10px;
+        /* 1em = 14px */
+        /* 2em = 28px */
+        font-size: 2em;
+      }
+
+      p {
+        border: thin solid green;
+        margin: 10px;
+        color: red;
+        padding: 10px; 
+        /* font-size: 2em; */
+        /* 1rem = root pixel = 14px */
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h3>Units of CSS - EM and REM</h3>
+    This is body content -> 14px
+    <div>
+      This is root div -> 10px
+      <section>
+        child of div -> section -> 2em == 2 * 10 = 20px
+        <p>child of section -> p -> 2em == 2 * 20 = 40px</p>
+      </section>
+    </div>
+  </body>
+</html>

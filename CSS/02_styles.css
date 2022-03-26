@@ -1,0 +1,15 @@
+#header {
+  color: green;
+}
+
+p {
+  color: red;
+}
+
+.class_para{
+    color: blue;
+}
+
+#id_para{
+    color: yellowgreen;
+}
