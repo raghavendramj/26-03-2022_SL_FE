@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Table Example!</title>
+    <style>
+      table {
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+      }
+
+      td,
+      th {
+        border: 1px solid brown;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellspacing="10" cellpadding="10">
+      <tr>
+        <th>Sl.No</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raghav</td>
+        <td rowspan="2">raghav@gmail.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Keshav</td>
+        <!-- <td>keshav@gmail.com</td> -->
+      </tr>
+      <tr>
+        <td>3</td>
+        <!-- <td >Thilak</td> -->
+        <td colspan="2">thilak@gmail.com</td>
+      </tr>
+    </table>
+  </body>
+</html>
