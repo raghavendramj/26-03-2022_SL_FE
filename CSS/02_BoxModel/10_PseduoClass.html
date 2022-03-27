@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>CSS Pseudo Class</title>
+    <style>
+      p::first-line {
+        color: red;
+        font-variant: small-caps;
+      }
+      /* Unvisited link*/
+      a:link {
+        color: #ff0000;
+      }
+
+      /* Visited link*/
+      a:visited {
+        color: #00ff00;
+      }
+
+      /* Hover on link */
+      a:hover {
+        color: #0000ff;
+      }
+      /* When user clicked on it */
+      a:active {
+        color: black;
+      }
+
+      .button-link:active {
+        background-color: lightgreen;
+      }
+
+      p:hover{
+        background-color: gold;
+        color: white;
+        cursor: pointer;
+        border: thick solid red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Some more text. And even more, and more, and more, and more, and more, and
+      more, and more, and more, and more, and more, and more, and more.
+    </p>
+
+    <a href="https://www.googles.com">Open Google</a>
+    <br />
+    <br />
+    <a href="https://www.google.com">Open Google</a>
+    <br />
+    <br />
+    <a href="https://www.simplilearn.com">
+      <button class="button-link">Simplilearn</button>
+    </a>
+
+    <p>
+      When the paragraph is clicked, the paragraph becomes active and the
+      background color of the paragraph becomes green as well as the text color
+      becomes white.
+    </p>
+  </body>
+</html>

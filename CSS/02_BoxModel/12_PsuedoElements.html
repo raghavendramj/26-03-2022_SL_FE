@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Nth Child Pseudo Element</title>
+    <style>
+        div > p:nth-child(2){
+            color: red;
+        }
+
+        div > p:nth-child(odd){
+            color: yellowgreen;
+        }
+
+        div > p:last-child{
+            background: lightcoral;
+            color: black;
+        }
+        span > p:not(.fancy){
+            color: brown;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is paragraph 1.</p>
+      <p>This is paragraph 2.</p>
+      <p>This is paragraph 3.</p>
+      <p>This is paragraph 4.</p>
+      <p>This is paragraph 5.</p>
+      <p>This is paragraph 6.</p>
+      <p>This is paragraph 7.</p>
+      <p>This is paragraph 8.</p>
+      <p>This is paragraph 9.</p>
+      <p>This is paragraph 10.</p>
+    </div>
+    <span>
+      <h4>Not Psudeo Elements Test</h4>
+      <p class="fancy">I am a fancy paragraph</p>
+      <p>I am a normal paragraph</p>
+    </span>
+  </body>
+</html>

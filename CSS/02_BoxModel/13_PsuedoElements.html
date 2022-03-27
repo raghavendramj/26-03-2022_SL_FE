@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Pseudo Elements</title>
+    <style>
+        .ribbon{
+            background-color: coral;
+        }
+
+        .ribbon::before{
+            content: 'Look at the orange box ';
+            background-color: aliceblue;
+            border: 1px dotted black;
+        }
+
+        p::before{
+            content: "I am before para --> ";
+        }
+        p::after{
+            content: " --> I am after para --> ";
+        }
+    </style>
+</head>
+<body>
+    <p>Message</p>
+    <span class="ribbon">Just Observe Before the corol box.</span>
+</body>
+</html>

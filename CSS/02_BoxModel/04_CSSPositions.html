@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>CSS Positions</title>
+    <style>
+      #div1 {
+        margin: 10px;
+        width: 250px;
+        height: 250px;
+        background-color: lightgray;
+        border: thin solid red;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      #div2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+        border: thin solid black;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      #div3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: lightgoldenrodyellow;
+        border: thin solid black;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1">
+      Div-01
+
+      <div id="div2">Div-02</div>
+    </div>
+
+    <div id="div3">Div-03</div>
+  </body>
+</html>
