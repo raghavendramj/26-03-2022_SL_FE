@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Introduction to JavaScript</title>
+    <script>
+      function loadData() {
+        console.log("Welcome to JavaScript!");
+        alert("Welcome to JavaScript!");
+
+        var data = document.getElementById('data1');
+        data.innerHTML ="You have loaded the content successfully!"
+    
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
+        xmlHttp.send();
+
+        xmlHttp.onreadystatechange = () => {
+            if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
+                var data = document.getElementById('data2');
+                data.append(xmlHttp.response);
+            }
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <p class="h3">Welcome to JavaScript</p>
+      <button onclick="loadData()" class="btn btn-secondary">
+        Load Data
+      </button>
+      <p class="mt-3" id="data1">       
+      <p class="mt-3" id="data2">       
+      </p>
+    </div>
+  </body>
+</html>
