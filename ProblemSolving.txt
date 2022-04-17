@@ -1,0 +1,6 @@
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+
+Mandatory:-
+	No Of Easy Questions :- 150-200
+	No Of Medium Questions :- 60-80
+	No Of Hard Questions :- 25-40

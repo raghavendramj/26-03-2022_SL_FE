@@ -1,0 +1,30 @@
+list of customers
+	-> JSON -> Registered Users
+	{
+		username:'keshav',
+		password: 'kesha@123'
+		email: 'kesha@gmail.com'
+	}
+list of products
+	-> {
+		name: 'Colgate',
+		quantity: 2		
+	}
+	
+Components
+	-> home
+	-> admin-dashboard
+	-> admin-login
+	-> cart
+	-> checkout
+	-> get-customer
+	-> header
+	-> footer
+	-> product
+	Services
+		product.service
+		-> getProducts()
+		customer.service
+		-> getCustomers()
+		car.service
+			-> getCartInfo()
